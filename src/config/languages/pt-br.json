@@ -1,0 +1,78 @@
+{
+	"commands": {
+		"ban": {
+			"help": {
+				"title": "🔨 Banir",
+				"description": "Use este comando para banir algum membro do seu servidor, `{prefix}banir <@membro/id> [razão]`",
+				"fields": {
+					"title1": "Exemplo:",
+					"description1": "`{prefix}banir @fulano`\n`{prefix}banir @fulano por quebrar as regras`\n`{prefix}banir 123456789987654321`",
+					"title2": "Apelidos:",
+					"description2": "`ban`, `banir`"
+				}
+			},
+			"success": "O {member}[{memberName} - {memberId}] foi banido do servidor! Razão: `{reason}`",
+			"error": "Algo deu errado ao alterar o idioma deste servidor, tente novamente mais tarde.",
+			"notMember": "Este membro não existe, tente mencionar ou digitar corretamente.",
+			"notYourSelf": "Você não pode se banir.",
+			"notAdmin": "Este membro não pode ser banido. É porque eles são mod/admin ou seu cargo é mais elevado á minha.",
+			"noReason": "Sem razão."
+		},
+		"language": {
+			"help": {
+				"title": "🔠 Idioma",
+				"description": "Altere o idioma do {botName} em relação ao servidor com o comando `{prefix}idioma <pt-br/en-us/es>`.",
+				"fields": {
+					"title1": "Exemplo:",
+					"description1": "`{prefix}idioma en-us`",
+					"title2": "Apelidos:",
+					"description2": "`idioma`, `language`, `local`, `locale`"
+				}
+			},
+			"success": "O idioma deste servidor foi definido para: `{language}`",
+			"error": "Algo deu errado ao alterar o idioma deste servidor, tente novamente mais tarde.",
+			"notLanguage": "O idioma {language} não existe, os unicos idiomas existentes são: `pt-br`, `en-us`, `es`."
+		},
+		"prefix": {
+			"help": {
+				"title": "💠 Prefixo",
+				"description": "Altere o prefixo do {botName} em relação ao servidor com o comando `{prefix}prefix <prefix>`.",
+				"fields": {
+					"title1": "Exemplo:",
+					"description1": "`{prefix}prefix $`",
+					"title2": "Apelidos:",
+					"description2": "`prefixo`, `prefix`, `prefijo`"
+				}
+			},
+			"success": "O prefixo deste servidor foi definido para: `{prefix}`",
+			"error": "Algo deu errado ao alterar o idioma deste servidor, tente novamente mais tarde.",
+			"maxLength": "O prefixo só pode ter no máximo 8 caracteres."
+		}
+	},
+    "events": {
+        "interaction": {
+            "error": "Ocorreu um erro",
+            "error2": "Ocorreu um erro ao executar este comando!",
+            "ownerWarn": "Opa opa {member}, calma lá, esse comando é só para pessoas especiais de total confiaça, você não pode excutar esse comando."
+        }
+    },
+	"moduleController": {
+        "startBot": "Iniciando {botName}!",
+		"loadingModules": "Carregando Modulos",
+		"startMongo": "Iniciando MongoDB...",
+		"successMongo": "MongoDB conectado!",
+		"errorMongo": "Erro ao conectar no MongoDB!",
+		"loadingEvents": "Carregando Eventos...",
+		"errorEvents": "❌ Não foi possivel carregar os Eventos!",
+		"loadingCommands": "Carregando comandos...",
+		"resultCommand": "Comando: {name}\n - Texto: {textStatus};\n - Slash: {slashStatus};",
+		"successCommands": "✅ Comandos carregado com sucesso!",
+		"errorCommands": "❌ Ocorreu um erro ao carregar os comandos!\n",
+		"successModules": "✅ Modulos carregados com sucesso!",
+        "successBot": "✅ {botName} foi iniciado com sucesso!"
+	},
+	"permissions": {
+		"Manager_Guild": "Você não tem permissão para usar este comando, apenas quem tem a permissão `Gerenciar Servidor`.",
+		"Member_Ban": "Você não tem permissão para usar este comando, apenas quem tem a permissão `Banir Membros`"
+	}
+}

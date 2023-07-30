@@ -1,0 +1,78 @@
+{
+    "commands": {
+        "ban": {
+            "help": {
+                "title": "🔨 Ban",
+                "description": "Use this command to ban a member from your server, `{prefix}ban <@member/id> [reason]`",
+                "fields": {
+                    "title1": "Example:",
+                    "description1": "`{prefix}ban @someone`\n`{prefix}ban @someone for breaking the rules`\n`{prefix}ban 123456789987654321`",
+                    "title2": "Aliases:",
+                    "description2": "`ban`, `banir`"
+                }
+            },
+            "success": "{member}[{memberName} - {memberId}] has been banned from the server! Reason: `{reason}`",
+            "error": "Something went wrong while changing the language of this server, please try again later.",
+            "notMember": "This member does not exist, try mentioning or typing correctly.",
+            "notYourSelf": "You cannot ban yourself.",
+            "notAdmin": "This member cannot be banned because they are a mod/admin or their role is higher than mine.",
+            "noReason": "No reason."
+        },        
+        "language": {
+            "help": {
+                "title": "🔠 Language",
+                "description": "Change the language of {botName} in relation to the server with the command `{prefix}language <pt-br/en-us/es>`.",
+                "fields": {
+                    "title1": "Example:",
+                    "description1": "`{prefix}language en-us`",
+                    "title2": "Aliases:",
+                    "description2": "`language`, `idioma`, `local`, `locale`"
+                }
+            },
+            "success": "The language of this server has been set to: `{language}`",
+            "error": "Something went wrong when changing the language of this server, please try again later.",
+            "notLanguage": "The language {language} does not exist, the only existing languages are: `pt-br`, `en-us`, `es`."
+        },
+        "prefix": {
+            "help": {
+                "title": "💠 Prefix",
+                "description": "Change the prefix of {botName} in relation to the server with the command `{prefix}prefix <prefix>`.",
+                "fields": {
+                    "title1": "Example:",
+                    "description1": "`{prefix}prefix $`",
+                    "title2": "Aliases:",
+                    "description2": "`prefix`, `prefixo`, `prefijo`"
+                }
+            },
+            "success": "The prefix of this server has been set to: `{prefix}`",
+            "error": "Something went wrong when changing the language of this server, please try again later.",
+            "maxLength": "The prefix can only have a maximum of 8 characters."
+        }        
+    },
+    "events": {
+        "interaction": {
+            "error": "An error occurred",
+            "error2": "An error occurred while executing this command!",
+            "ownerWarn": "Whoa there, {member}, hold on! This command is only for very special and trusted individuals. You are not allowed to execute this command."
+        }
+    },    
+    "moduleController": {
+        "startBot": "Starting {botName}!",
+        "loadingModules": "Loading Modules...",
+        "startMongo": "Starting MongoDB...",
+        "successMongo": "MongoDB connected!",
+        "errorMongo": "Error connecting to MongoDB.",
+        "loadingEvents": "Loading Events...",
+        "errorEvents": "❌ Failed to load Events.",
+        "loadingCommands": "Loading Commands...",
+        "resultCommand": "Command: {name}\n - Text: {textStatus};\n - Slash: {slashStatus};",
+        "successCommands": "✅ Commands loaded successfully!",
+        "errorCommands": "❌ An error occurred while loading the commands.\n",
+        "successModules": "✅ Modules loaded successfully!",
+        "successBot": "✅ {botName} started successfully!"
+    },    
+    "permissions": {
+        "Manager_Guild": "You do not have permission to use this command, only those with the `Manage Server` permission.",
+        "Member_Ban": "You do not have permission to use this command, only those with the `Ban Members` permission."
+    }    
+}

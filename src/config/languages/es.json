@@ -1,0 +1,79 @@
+{
+    "commands": {
+        "ban": {
+            "help": {
+                "title": "🔨 Ban",
+                "description": "Usa este comando para banear a un miembro de tu servidor, `{prefix}ban <@miembro/id> [razón]`",
+                "fields": {
+                    "title1": "Ejemplo:",
+                    "description1": "`{prefix}ban @alguien`\n`{prefix}ban @alguien por romper las reglas`\n`{prefix}ban 123456789987654321`",
+                    "title2": "Alias:",
+                    "description2": "`ban`, `banir`"
+                }
+            },
+            "success": "{member} [{memberName} - {memberId}] ha sido baneado del servidor! Razón: `{reason}`",
+            "error": "Algo salió mal al cambiar el idioma de este servidor, por favor intentalo de nuevo más tarde.",
+            "notMember": "Este miembro no existe, intenta mencionarlo o escribirlo correctamente.",
+            "notYourSelf": "No puedes banearte a ti mismo.",
+            "notAdmin": "Este miembro no puede ser baneado porque es un mod/admin o su rol es más alto que el mío.",
+            "noReason": "Sin razón."
+        },        
+        "language": {
+            "help": {
+                "title": "🔠 Idioma",
+                "description": "Cambia el idioma de {botName} en relación con el servidor con el comando `{prefix}idioma <pt-br/en-us/es>`.",
+                "fields": {
+                    "title1": "Ejemplo:",
+                    "description1": "`{prefix}idioma es`",
+                    "title2": "Alias:",
+                    "description2": "`idioma`, `language`, `local`, `locale`"
+                }
+            },
+            "success": "El idioma de este servidor se ha establecido en: `{language}`",
+            "error": "Algo salió mal al cambiar el idioma de este servidor, inténtalo de nuevo más tarde.",
+            "notLanguage": "El idioma {language} no existe, los únicos idiomas existentes son: `pt-br`, `en-us`, `es`."
+        },
+        "prefix": {
+            "help": {
+                "title": "💠 Prefijo",
+                "description": "Cambia el prefijo de {botName} en relación con el servidor con el comando `{prefix}prefijo <prefijo>`.",
+                "fields": {
+                    "title1": "Ejemplo:",
+                    "description1": "`{prefix}prefijo $`",
+                    "title2": "Alias:",
+                    "description2": "`prefijo`, `prefixo`, `prefix`"
+                }
+            },
+            "success": "El prefijo de este servidor se ha establecido en: `{prefix}`",
+            "error": "Algo salió mal al cambiar el idioma de este servidor, inténtalo de nuevo más tarde.",
+            "maxLength": "El prefijo solo puede tener un máximo de 8 caracteres."
+        }
+        
+    },
+    "events": {
+        "interaction": {
+            "error": "Ha ocurrido un error",
+            "error2": "Ha ocurrido un error al ejecutar este comando.",
+            "ownerWarn": "¡Alto ahí, {member}! Este comando es solo para personas muy especiales y de total confianza. No tienes permiso para ejecutar este comando."
+        }
+    },    
+    "moduleController": {
+        "startBot": "Iniciando {botName}!",
+        "loadingModules": "Cargando Módulos...",
+        "startMongo": "Iniciando MongoDB...",
+        "successMongo": "¡MongoDB conectado!",
+        "errorMongo": "Error al conectar con MongoDB.",
+        "loadingEvents": "Cargando Eventos...",
+        "errorEvents": "❌ No se pudieron cargar los Eventos.",
+        "loadingCommands": "Cargando Comandos...",
+        "resultCommand": "Comando: {name}\n - Texto: {textStatus};\n - Slash: {slashStatus};",
+        "successCommands": "✅ ¡Comandos cargados exitosamente!",
+        "errorCommands": "❌ Ocurrió un error al cargar los comandos.\n",
+        "successModules": "✅ ¡Módulos cargados exitosamente!",
+        "successBot": "✅ ¡{botName} iniciado exitosamente!"
+    },    
+    "permissions": {
+        "Manager_Guild": "No tienes permiso para usar este comando, solo aquellos con el permiso `Administrar Servidor`.",
+        "Member_Ban": "No tienes permiso para usar este comando, solo aquellos con el permiso `Expulsar Miembros`."
+    }    
+}
